@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Bookshelf Apps</h2>
+        <div class="search-container">
+            <form action="" id="form-search">
+                <input type="text" id="input-search" class="input-search" placeholder="Search book...">
+                <button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
+                <button type="button" class="btn-add" id="btn-add">Add book</button>
+            </form>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="unread-container">
+            <h3>Unread books.</h3>
+        </div>
+        <div class="list-container" id="unread-books">
+
+        </div>
+    
+        <div class="done-container">
+            <h3>Read books.</h3>
+        </div>
+        <div class="list-container" id="done-books">
+            
+        </div>
+    </div>
+    <div class="form-area animate" id="form-input">
+        <div class="form-container" id="form-container">
+            <h2>Write your reading.</h2>
+            <form action="" id="form-add">
+                <div class="input-group">
+                    <label for="title-input">Title</label>
+                    <input type="text" id="title-input" class="item-input" placeholder="Harry Potter and The Deathly Hollows">
+                </div>
+                <div class="input-group">
+                    <label for="author-input">Author</label>
+                    <input type="text" id="author-input" class="item-input" placeholder="J.K Rowling">
+                </div>
+                <div class="input-group">
+                    <label for="year-input">Year</label>
+                    <input type="number" id="year-input" class="item-input" placeholder="2007">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="status-input" class="item-check">
+                    <span>Mark as unread</span> 
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn-close" id="btn-close">Cancel</button>
+                    <button type="submit" class="btn-save">Save Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="form-area animate" id="form-update">
+        <div class="form-container" id="form-container">
+            <h2>Write your reading.</h2>
+            <form action="" id="form-change">
+                <div class="input-group">
+                    <label for="title-update">Title</label>
+                    <input type="text" id="title-update" class="item-input" placeholder="Harry Potter and The Deathly Hollows">
+                </div>
+                <div class="input-group">
+                    <label for="author-update">Author</label>
+                    <input type="text" id="author-update" class="item-input" placeholder="J.K Rowling">
+                </div>
+                <div class="input-group">
+                    <label for="year-update">Year</label>
+                    <input type="number" id="year-update" class="item-input" placeholder="2007">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="status-update" class="item-check">
+                    <span>Mark as unread</span> 
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn-close" id="btn-close-update">Cancel</button>
+                    <button type="submit" class="btn-save">Save Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
